@@ -7,12 +7,12 @@
   font-size: 18px;
   color: #000;
   line-height: 21.13px;
-  padding: 92px 50px 96px;
+  padding: 96px 50px 92px;
 }
 
 .header__links-list {
   display: flex;
-  gap: 29px;
+  gap: 37px;
 }
 
 .header__links-list-item {
@@ -33,10 +33,14 @@
   border: none;
 }
 
+.header__logo {
+  min-width: 138px;
+}
+
 .header__address {
   justify-self: end;
   font-style: normal;
-  max-width: 240px;
+  max-width: 237px;
 }
 
 .header__address__links {
@@ -227,13 +231,26 @@
 
 .about {
   display: grid;
-  grid-template-columns: 359px 1fr;
+  grid-template-columns: 382px 1fr;
   grid-template-rows: auto;
-  padding: 35px 24px 180px;
+  padding: 35px 0 180px;
 }
 
 .about__logo {
   justify-self: center;
+  background-color: #000;
+  border-radius: 50%;
+  max-width: 240px;
+  max-height: 240px;
+}
+
+.about__logo img {
+  width: 61%;
+  translate: 32% 55%
+}
+
+.about__description {
+  max-width: 693px;
 }
 
 .about__description-title {
@@ -258,9 +275,10 @@
 
 .footer {
   padding: 0 50px 82px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
   justify-content: space-between;
-  align-content: start;
   font-size: 18px;
   font-weight: 400;
 }
@@ -268,6 +286,7 @@
 .footer__address {
   font-style: normal;
   max-width: 264.5px;
+  justify-self: start;
 }
 
 .footer__address__links {
@@ -283,7 +302,7 @@
 
 .footer__menu {
   display: flex;
-  align-items: start;
+  justify-self: center;
 }
 
 .footer__menu-list {
@@ -305,4 +324,9 @@
   display: flex;
   list-style-type: none;
   gap: 48px;
+  justify-self: end;
+}
+
+.footer__social-list-item {
+  max-width: 48px;
 }
